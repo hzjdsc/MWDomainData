@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="domain_server_info.js"></script>
+</head>
+<body>
+    <form action="" method="post">
+    <div id="admin_server"></div>
+    <input type="submit" id="btn_server_info_finished" style="display: none" value="确认提交">
+    </form>
+    <button id="btn_add_managed_server">Add Managed Server</button>
+
+    <div id="server_template" style="display: none">
+        Instance Name: <input type="text" name="instance_name">
+        Instance Type: <select name="instance_type"></select>
+        IP: <select name="server_ip"></select>
+        Http Port: <input type="text" name="http_port">
+        Https Port: <input type="text" name="https_port">
+    </div>
+</body>
+</html>

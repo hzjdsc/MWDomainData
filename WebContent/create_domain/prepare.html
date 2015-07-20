@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="prepare.js"></script>
+</head>
+<body>
+	<div id="pre_input">
+		domain name: <input type="text" name="domain_name"> <br>
+		node count : <input type="number" name="node_count"> <br>
+        in cluster : Yes <input type="radio" name="is_cluster" value="yes" checked="checked">
+                     No <input type="radio" name="is_cluster" value="no"> <br>
+		server IPs : <textarea id="IP" rows="8" cols="20"></textarea> <br/>
+		<button id="btn_start_input">开始录入domain信息</button>
+	</div>
+	<!--<button id="btn_hostname" style="display: none">hostname检查</button>-->
+	<!--<p id="result"></p>-->
+    <div id="domain_general_info">
+        <button id="btn_server_input" style="display: none">开始录入server信息</button>
+    </div>
+    <div id="domain_server_info">
+    </div>
+</body>
+</html>
